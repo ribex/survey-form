@@ -6,24 +6,60 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 </head>
 <body>
-<h1>Survey Form</h1>
 
+<div class="container">
+<h1>Survey Form</h1>    
 <form>
-    <input type="text" name="name"/>Enter your name</input>
-    <input type="text" name="email">Enter your Email</input>
-    <input type="text" name="age"/>Age</input>
-    <input type="dropdown" name="role">
+    <input type="text" name="name" placeholder="Enter your name"/></input>
+    <input type="text" name="email" placeholder="Enter your Email"></input>
+    <input type="text" name="age" placeholder="Age"></input>
+    <input type="dropdown" name="role" placeholder="role">
     
     </input>
-    <input type="radio" name="recommend">radio</input>
-    <input type="dropdown" name="like">dropdown</input>
-    <input type="checkbox" name="improvements">imp</input>
-    <input type="textarea" name="comments">Enter your comment here...</input>
+    <label class="radio">
+        <input type="radio" name="recommend">radio1
+        <input type="radio" name="recommend">radio2   
+    </label>
+    <input type="dropdown" name="like">dropdown
+    <input type="checkbox" name="improvements">imp
+    <input type="textarea" name="comments">Enter your comment here...
     
     <input type="submit" value="Submit"/>
 </form>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+<form class="form-vertical|form-horizontal|form-inline|form-search">
+    <fieldset>
+        <legend>Legend text</legend>
+        <div class="control-group error|warning|success">
+            <label class="control-label">Name</label>
+            <div class="controls">
+                <input type="text" class="input-mini|-small|-medium|-large|-xlarge|-xxlarge span 1 disabled ">
+                <label class="checkbox">
+                    <input type="checkbox">Checkbox1
+                    <input type="checkbox">Checkbox2                    
+                </label>
+                <label class="radio">
+                    <input type="radio"> Radio1
+                    <input type="radio"> Radio2                   
+                </label>                
+                
+                <span class="uneditable-input">Can't touch this!</span>
+                <span class="help-inline">Supporting inline help text</span>
+                <p class="help-block">Supporting help text</p>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary">Save</button>
+        </div>
+    </fieldset>
+    
+    
+</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 <footer></footer>
 </html>
