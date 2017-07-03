@@ -6,15 +6,16 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1 class="text-center">Survey Form</h1>
+	<h1 class="text-center" id="title">Survey Form</h1>
 	<div class="container">
 		<form>
+			<legend id="description" class="text-center">Let us know how we can improve FreeCodeCamp</legend>
 			<div class="row justify-content-center">
 				<div class="col-xs-6">
 					<label for="name">Name</label>
 				</div>
-				<div class="col-xs-6">
-					<input name="name" placeholder="Enter your name" type="text">
+				<div class="col-xs-6 form-control-group">
+					<input name="name" placeholder="Enter your name" type="text" required>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -22,7 +23,7 @@
 					<label for="email">Email</label>
 				</div>
 				<div class="col-xs-6">
-					<input name="email" placeholder="Enter your Email" type="text">
+					<input name="email" placeholder="Enter your Email" type="email" required>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -30,7 +31,7 @@
 					<label for="age">Age</label>
 				</div>
 				<div class="col-xs-6">
-					<input name="age" placeholder="Age" type="text">
+					<input name="age" placeholder="Age" type="number" min="12" max="130" required>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -62,7 +63,7 @@
 					<label for="recommend">How likely is that you would recommend FreeCodeCamp to a friend?</label>
 				</div>
 				<div class="col-xs-6">
-				    <input name="recommend" type="radio" value="definitely">Definitely<br> 
+				    <input name="recommend" type="radio" value="definitely" required>Definitely<br> 
 				    <input name="recommend" type="radio" value="maybe">Maybe<br> 
 				    <input name="recommend" type="radio" value="notsure">Not sure<br> 				    
 				</div>
@@ -132,7 +133,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 	</script> 
 	<script src="js/bootstrap.js">
-	</script>
+	</script>	
 	<footer></footer>
 </body>
 </html>
