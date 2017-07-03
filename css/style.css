@@ -1,0 +1,40 @@
+
+
+body {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/1e/ef/c5/1eefc5567dc5c55f67ef6849b9235582.jpg");
+    background-color: #cccccc;
+    color: #f4dc42;
+    font-family: 'Itim', Arial;
+    font-size: 24px;
+    line-height: 2.5em;
+}
+
+input {
+    color: #3a3111;
+}
+button {
+    color: #3a3111;
+    margin: 0 auto;
+}
+
+.label-right {
+    text-align: right;
+}
+
+.container {
+    width: 100%;
+}
+
+textarea {
+  height: auto;
+}
+
+#like, #role {
+    color: #3a3111;
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
