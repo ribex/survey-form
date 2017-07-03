@@ -1,51 +1,50 @@
-
-
 body {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/1e/ef/c5/1eefc5567dc5c55f67ef6849b9235582.jpg");
-    background-color: #cccccc;
-    color: #f4dc42;
-    font-family: 'Itim', Arial;
-    font-size: 24px;
-    line-height: 2.5em;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/1e/ef/c5/1eefc5567dc5c55f67ef6849b9235582.jpg");
+	background-color: #cccccc;
+	color: #f4dc42;
+	font-family: 'Itim', Arial;
+	font-size: 24px;
+	line-height: 2.5em;
 }
 
 input {
-    color: #3a3111;
+	color: #3a3111;
 }
+
 button {
-    color: #3a3111;
-    margin: 0 auto;
+	color: #3a3111;
+	margin: 0 auto;
 }
 
 .label-right {
-    text-align: right;
+	text-align: right;
 }
 
 .container {
-    width: 65%;
-
+	width: 65%;
 }
 
 #title {
-    font-size: 2em;
-    font-weight: bolder;
+	font-size: 2em;
+	font-weight: bolder;
 }
 
 legend {
-    color: #41b8f4;
-    font-style: italic;
+	color: #41b8f4;
+	font-style: italic;
 }
 
 textarea {
-  height: auto;
+	height: auto;
 }
 
-#like, #role {
-    color: #3a3111;
+#like,
+#role {
+	color: #3a3111;
 }
 
 .form-actions {
-    margin: 0;
-    background-color: transparent;
-    text-align: center;
+	margin: 0;
+	background-color: transparent;
+	text-align: center;
 }
