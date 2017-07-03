@@ -22,7 +22,18 @@ button {
 }
 
 .container {
-    width: 100%;
+    width: 65%;
+
+}
+
+#title {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+legend {
+    color: #41b8f4;
+    font-style: italic;
 }
 
 textarea {
