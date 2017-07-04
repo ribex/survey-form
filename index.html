@@ -11,137 +11,139 @@
 	<h1 class="text-center" id="title">Survey Form</h1>
 	<div class="container">
 		<form>
-			<legend class="text-center" id="description">Let us know how we can improve
-			FreeCodeCamp</legend>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="name">Name</label>
+			<fieldset>
+				<legend class="text-center" id="description">Let us know how we can improve
+				FreeCodeCamp</legend>
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="name">Name</label>
+					</div>
+					<div class="col-xs-6 form-control-group">
+						<input name="name" placeholder="Enter your name" required="" type="text">
+					</div>
 				</div>
-				<div class="col-xs-6 form-control-group">
-					<input name="name" placeholder="Enter your name" required="" type="text">
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-xs-6">
+						<input name="email" placeholder="Enter your Email" required="" type=
+						"email">
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="email">Email</label>
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="age">Age</label>
+					</div>
+					<div class="col-xs-6">
+						<input max="130" min="12" name="age" placeholder="Age" required="" type=
+						"number">
+					</div>
 				</div>
-				<div class="col-xs-6">
-					<input name="email" placeholder="Enter your Email" required="" type=
-					"email">
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="role">Which option describes your current role?</label>
+					</div>
+					<div class="col-xs-6" id="role">
+						<select name="role">
+							<option selected value="student">
+								Student
+							</option>
+							<option value="fulltimejob">
+								Full Time Job
+							</option>
+							<option value="fulltimelearner">
+								Full Time Learner
+							</option>
+							<option value="prefernottosay">
+								Prefer not to say
+							</option>
+							<option value="Other">
+								Other
+							</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="age">Age</label>
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="recommend">How likely is that you would recommend FreeCodeCamp
+						to a friend?</label>
+					</div>
+					<div class="col-xs-6">
+						<input name="recommend" required="" type="radio" value=
+						"definitely">Definitely<br>
+						<input name="recommend" type="radio" value="maybe">Maybe<br>
+						<input name="recommend" type="radio" value="notsure">Not sure<br>
+					</div>
 				</div>
-				<div class="col-xs-6">
-					<input max="130" min="12" name="age" placeholder="Age" required="" type=
-					"number">
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="like">What do you like most in FCC:</label>
+					</div>
+					<div class="col-xs-6" id="like">
+						<select name="like">
+							<option selected value="challenges">
+								Challenges
+							</option>
+							<option value="projects">
+								Projects
+							</option>
+							<option value="community">
+								Community
+							</option>
+							<option value="opensource">
+								Open Source
+							</option>
+						</select>
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="role">Which option describes your current role?</label>
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="improvements">Things that should be improved in the future
+						(Check all that apply):</label><br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="frontend">Front-end
+						Projects
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="backend">Back-end
+						Projects
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="datavis">Data
+						Visualization
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="challenges">Challenges
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="opensource">Open Source
+						Community
+					</div>
+					<div class="col-xs-6">
+						<input name="improvements" type="checkbox" value="gitter">Gitter help
+						rooms
+					</div>
 				</div>
-				<div class="col-xs-6" id="role">
-					<select name="role">
-						<option selected value="student">
-							Student
-						</option>
-						<option value="fulltimejob">
-							Full Time Job
-						</option>
-						<option value="fulltimelearner">
-							Full Time Learner
-						</option>
-						<option value="prefernottosay">
-							Prefer not to say
-						</option>
-						<option value="Other">
-							Other
-						</option>
-					</select>
+				<div class="row justify-content-center">
+					<div class="col-xs-6 label-right">
+						<label for="suggestion">Any comments or suggestions?</label>
+					</div>
+					<div class="col-xs-6">
+						<textarea id="suggestion" name="suggestion" placeholder=
+						"Enter your comment here..." rows="5"></textarea>
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="recommend">How likely is that you would recommend FreeCodeCamp
-					to a friend?</label>
+				<div class="form-actions">
+					<button class="btn btn-primary btn-lg text-center" type="submit" value=
+					"submit">Submit</button>
 				</div>
-				<div class="col-xs-6">
-					<input name="recommend" required="" type="radio" value=
-					"definitely">Definitely<br>
-					<input name="recommend" type="radio" value="maybe">Maybe<br>
-					<input name="recommend" type="radio" value="notsure">Not sure<br>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="like">What do you like most in FCC:</label>
-				</div>
-				<div class="col-xs-6" id="like">
-					<select name="like">
-						<option selected value="challenges">
-							Challenges
-						</option>
-						<option value="projects">
-							Projects
-						</option>
-						<option value="community">
-							Community
-						</option>
-						<option value="opensource">
-							Open Source
-						</option>
-					</select>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="improvements">Things that should be improved in the future
-					(Check all that apply):</label><br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="frontend">Front-end
-					Projects
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="backend">Back-end
-					Projects
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="datavis">Data
-					Visualization
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="challenges">Challenges
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="opensource">Open Source
-					Community
-				</div>
-				<div class="col-xs-6">
-					<input name="improvements" type="checkbox" value="gitter">Gitter help
-					rooms
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xs-6 label-right">
-					<label for="suggestion">Any comments or suggestions?</label>
-				</div>
-				<div class="col-xs-6">
-					<textarea id="suggestion" name="suggestion" placeholder=
-					"Enter your comment here..." rows="5"></textarea>
-				</div>
-			</div>
-			<div class="form-actions">
-				<button class="btn btn-primary btn-lg text-center" type="submit" value=
-				"submit">Submit</button>
-			</div>
+			</fieldset>
 		</form>
 		<script src=
 		"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
